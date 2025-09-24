@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DAMMGirls</title>
+</head>
+<body>
+    <section id="banner">
+       <img src="./resources/glitch_effect.gif" alt="">
+       <div class="content">
+        <h1>Trouble Media</h1>
+        <img src="./resources/icons8-x-24.png" alt="">
+        <p class="subtitle">DAMM Girls</p>
+       </div>
+    </section>
+    <section id="about">
+        <div class="content" id="first">
+            <div class="title">
+                <h1>About Us</h1>
+                <p class="name">MARIA</p>
+            </div>
+            <div class="inner-content">
+                <div class="left">
+                    
+                    
+                    <p class="content">
+                        DAMM Girls este o trupă de dans formată din Ana, Maria și Gabi, parte din Trouble Academy. 
+                        În fiecare zi aducem energie și vibe pozitiv prin mini-coregrafii pe piesele voastre preferate sau 
+                        pe melodiile care ne inspiră.
+                    </p>
+                    <a href="#" class="cta">FOLLOW & VIBE WITH US</a>
+                    <div class="socials">
+                        <ul>
+                            <li class="social-link"><img src="./resources/icons8-youtube-48.png" alt=""><a href="https://www.youtube.com/@DAMM_Girls">youtube.com/@DAMM_Girls</a></li>
+                            <li class="social-link"><img src="./resources/icons8-tiktok-48.png" alt=""><a href="tiktok.com/@damm.girls13">tiktok.com/@damm.girls13</a></li>
+                            <li class="social-link"><img src="./resources/icons8-insta-48.png" alt=""><a href="https://www.instagram.com/officialdammgirls/">officialdammgirls</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <img class="girl" id="girl1" src="./resources/maria1.png" alt="">
+            </div>
+        </div>
+        <div class="content" id="second">
+            <div class="inner-content">
+                <p class="name">ANNE</p>
+                <img class="girl" id="girl2" src="./resources/anne1.png" alt="">
+            </div>
+
+        </div>
+        <div class="content" id="third">
+            <div class="inner-content">
+                <p class="name">GABI</p>
+
+                <img class="girl" id="girl3" src="./resources/gabi1.png" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <section id="troublemedia">
+        <video autoplay muted loop id="myVideo">
+            <source src="./resources/Magda_s Video - Sep 24, 2025-VEED.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+        <div class="content">
+
+            <div class="inner">
+                <img src="./resources/trblmedialogo-removebg-preview.png" alt="">
+                <div class="header">
+                    <h1>Trouble Media</h1>
+                    <img src="./resources/icons8-x-24.png" alt="">
+                    <p class="subtitle">DAMM Girls</p>
+                </div>
+
+                <p class="content">Un proiect nascut din pasiunea pentru dans si content digital.</p>
+                <p class="content two">Impreuna cu Trouble Media, DAMM Girls isi aduc energia zilnic pe Youtube, Instagram si TikTok.</p>
+                <a href="#" class="cta">Descopera Trouble Media</a>
+            </div>
+            
+        </div>
+    </section>
+
+
+
+
+    <script>
+        const first = document.querySelector("#girl1");
+        const second = document.querySelector("#girl2");
+        const third = document.querySelector("#girl3");
+        const first_div = document.querySelector("#first");
+        const second_div = document.querySelector("#second");
+        const third_div = document.querySelector("#third");
+
+        second.addEventListener("mouseenter", () => {
+            first_div.style.width = "50%";
+            second.style.transform = "scale(1.1)";
+        });
+
+        second.addEventListener("mouseleave", () => {
+            first_div.style.width = "";
+            first_div.style.padding = "";
+            second.style.transform = "scale(1)";
+
+        });
+        third.addEventListener("mouseenter", () => {
+            first_div.style.width = "50%";
+            second_div.style.width = "70%";
+        });
+
+        third.addEventListener("mouseleave", () => {
+            first_div.style.width = "";
+            second_div.style.width = "";
+        });
+    </script>
+</body>
+</html>

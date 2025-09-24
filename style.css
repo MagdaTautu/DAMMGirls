@@ -1,0 +1,314 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section{
+    height: 100vh;
+    overflow: hidden;
+}
+
+#banner {
+    background-color: black;
+    position: relative;
+}
+
+#banner img{
+    height: 100%;
+    margin: auto;
+    position: relative;
+    transform: translateX(50%);
+}
+
+#banner .content{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    width: 40%;
+    padding-bottom: 80px;
+}
+
+#banner .content h1{
+    font-size: 3.5rem;
+    display: inline;
+    font-family: 'Montserrat';
+
+}
+
+#banner .content img{
+    font-size: 3.5rem;
+}
+
+#banner .content p{
+    font-size: 2.5rem;
+    position: relative;
+    left: 100%;
+    transform: translateX(-50%);
+    font-family: 'Poppins';
+}
+
+
+#about{
+    position: relative;
+    min-height: 100vh;
+}
+
+#about div.content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+    top: 0;
+}
+
+
+
+#about div.content#first{
+    background-color: #272727;
+    width: 70%;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+}
+#about div.content#second{
+    background-color: #F85454;
+    width: 85%;
+    z-index: 5;
+}
+#about div.content#third{
+    background-color: gray;
+    width: 100%;
+    right: 0;
+    z-index: 4;
+}
+
+#about div.content#first .inner-content{
+    padding: 0 100px;
+    position: relative;
+}
+
+#about div.content#first .inner-content img.girl{
+    height: 100%;
+    max-height: 700px;
+}
+
+#about div.content .inner-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    height: 100%;
+
+}
+
+#about div.content .title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 170px 0 100px;
+    margin-top: 60px;
+    color: #fff;
+
+}
+
+#about div.content p.name{
+    font-family: "CrackedNarrow";
+    font-size: 1.5rem;
+}
+
+#about div.content .title h1
+{
+    width: 80%;
+    font-size: 3.5rem;
+    font-family: "Impact";
+    letter-spacing: 1.5px;
+}
+
+#about div.content img{
+    position: relative;
+    height: 100%;
+    max-height: 400px;
+   
+}
+
+
+#about div.content#second p.name{
+   position: absolute;
+   right: 6%;
+   top: 6%;
+}
+#about div.content#third p.name{
+    position: absolute;
+    right: 6%;
+    top: 6%;
+ }
+
+
+#about div.content .inner-content .left p{
+    width: 95%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: "Arial Rounded MT";
+    line-height: 50px;
+    margin-bottom: 100px;
+}
+
+
+
+#about div.content .inner-content .left {
+    color: #fff;
+    height: 100%;
+    padding: 50px 0;
+}
+
+#about div.content .inner-content img.girl{
+    align-self: flex-end;
+    right: 0;
+    bottom: 0;
+}
+
+
+#about div.content#second .inner-content img.girl{
+    align-self: flex-end;
+    bottom: 0px;
+    position: absolute;
+}
+
+#about div.content .inner-content .left a.cta{
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 20px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    font-family: "Segoe UI";
+    font-weight: 700;
+    margin: 50px 0;
+}
+
+#about div.content .inner-content .left .socials{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#about div.content .inner-content .left .socials ul {
+    list-style: none;
+}
+
+#about div.content .inner-content .left .socials ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#about div.content .inner-content .left .socials ul li img{
+    margin-right: 20px;
+}
+
+#about div.content .inner-content .left .socials ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+#about div.content {
+    transition: all 1s ease-in-out;
+  }
+
+
+
+  #troublemedia {
+    height: 100vh;
+    position: relative;
+
+  }
+  video{
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+  }
+  #troublemedia .overlay{
+    background: linear-gradient(
+    to top,
+    rgba(30, 30, 30, .9),
+    rgba(85, 85, 85, .9),
+    rgba(158, 158, 158,.9)
+    );
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 3;
+    backdrop-filter: blur(10px);
+}
+
+#troublemedia .inner{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    color: #fff;
+    padding: 100px;
+    width: 60%;
+}
+
+#troublemedia .inner img{
+    height: 150px;
+}
+
+#troublemedia .content{
+    width: 100%;
+    padding-left: 40px;
+    font-size: 1.7rem;
+}
+#troublemedia .content p.content{
+    margin: 20px 0;
+    font-family: "Inter";
+}
+#troublemedia .content p.content.two{
+    margin-bottom: 100px
+}
+
+#troublemedia .header{
+    color: #fff;
+    width: 60%;
+    padding-bottom: 50px;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+#troublemedia .cta{
+    margin-left: 40px;
+    text-decoration: none;
+    color: #fff;
+    background-color: red;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#troublemedia .header h1{
+    font-size: 3.5rem;
+    display: inline;
+    font-family: 'Montserrat';
+
+}
+
+#troublemedia .header img{
+    height: 30px;
+    margin-left: 20px;
+}
+
+#troublemedia .header p{
+    font-size: 3.5rem;
+    font-family: 'Poppins';
+}
+
