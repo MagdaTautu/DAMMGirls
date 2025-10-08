@@ -9,7 +9,7 @@ window.addEventListener("load", () => {
   /* ─────────────── 🔹 VIDEO HANDLERS ─────────────── */
   async function loadTikTok() {
     try {
-      const res = await fetch("https://dammgirls.onrender.com/:3000/api/tiktok/latest");
+      const res = await fetch("https://dammgirls.onrender.com/:10000/api/tiktok/latest");
       const data = await res.json();
 
       if (data.embedHtml) {
@@ -25,7 +25,7 @@ window.addEventListener("load", () => {
 
   async function loadYouTube() {
     try {
-      const res = await fetch("https://dammgirls.onrender.com/:3000/api/youtube/latest");
+      const res = await fetch("https://dammgirls.onrender.com/:10000/api/youtube/latest");
       const data = await res.json();
 
       if (data.embedHtml)
