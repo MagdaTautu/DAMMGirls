@@ -23,7 +23,7 @@ section{
 
 #banner .content{
     position: absolute;
-    bottom: 0;
+    bottom: 100px;
     left: 50%;
     transform: translateX(-50%);
     color: #fff;
@@ -35,19 +35,27 @@ section{
     font-size: 3.5rem;
     display: inline;
     font-family: 'Montserrat';
+    position: absolute;
+}
 
+#banner .content span{
+    color: #F85454;
 }
 
 #banner .content img{
     font-size: 3.5rem;
+    right: 0;
 }
 
 #banner .content p{
     font-size: 2.5rem;
-    position: relative;
-    left: 100%;
-    transform: translateX(-50%);
+    position: absolute;
+    left: 80%;
+    transform: translateX(-80%);
     font-family: 'Poppins';
+    bottom: -50px;
+    width: 50%;
+    text-align: center;
 }
 
 
@@ -82,7 +90,7 @@ section{
 }
 #about div.content#third{
     background-color: gray;
-    width: 100%;
+    width: 90%;
     right: 0;
     z-index: 4;
 }
@@ -149,6 +157,15 @@ section{
     top: 6%;
  }
 
+ #about div.content#second .inner-content, #about div.content#third .inner-content  {
+    width: 40%;
+    padding-left: 40px;
+ }
+
+ #about div.content#third .inner-content{
+    width: 42%;
+    padding-left: 80px;
+ }
 
 #about div.content .inner-content .left p{
     width: 95%;
@@ -176,11 +193,24 @@ section{
 }
 
 
+#about div.content#second .inner-content p.content, #about div.content#third .inner-content p.content{
+    color: #fff;
+    position: relative;
+    font-size: 1.5rem;
+    font-family: "Arial Rounded MT";
+    line-height: 50px;
+    width: 50%;
+}
+
 #about div.content#second .inner-content img.girl{
     align-self: flex-end;
     bottom: 0px;
     position: absolute;
+  
 }
+
+
+
 
 #about div.content .inner-content .left a.cta{
     color: #fff;
@@ -312,3 +342,444 @@ section{
     font-family: 'Poppins';
 }
 
+/* ──────────────── FOLLOWERS SECTION ──────────────── */
+#followers {
+    background: linear-gradient(180deg, #000000, #1a1a1a);
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #followers h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    margin-bottom: 80px;
+    position: relative;
+    z-index: 5;
+    letter-spacing: 2px;
+  }
+  
+  #followers h1::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #f85454;
+    margin: 20px auto 0;
+    border-radius: 2px;
+  }
+  
+  .followers-grid {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 5;
+  }
+  
+  .followers-grid .card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    width: 200px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 20px rgba(248, 84, 84, 0.2);
+    cursor: pointer;
+    opacity: 1;
+  }
+  
+  .followers-grid .card:hover {
+    transform: translateY(-10px) scale(1.05);
+    border-color: #f85454;
+    box-shadow: 0 0 30px rgba(248, 84, 84, 0.4);
+  }
+  
+  .followers-grid .card img {
+    width: 60px;
+    margin-bottom: 15px;
+    filter: brightness(1.2);
+  }
+  
+  .followers-grid .card p {
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .followers-grid .card:hover p {
+    color: #f85454;
+  }
+  
+  #followers::before {
+    content: "";
+    position: absolute;
+    top: -30%;
+    left: -20%;
+    width: 140%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(248,84,84,0.15) 0%, transparent 70%);
+    z-index: 1;
+    animation: glow 10s infinite alternate ease-in-out;
+  }
+  
+  @keyframes glow {
+    from { transform: translateY(0); opacity: 0.6; }
+    to { transform: translateY(20px); opacity: 0.9; }
+  }
+  
+
+  /* ──────────────── VIDEOS SECTION ──────────────── */
+.videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    background: linear-gradient(180deg, #1a1a1a 0%, #000000 100%);
+    padding: 80px 0;
+    gap: 40px;
+  }
+  
+  .videos .frame {
+    flex: 1 1 45%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 25px rgba(248, 84, 84, 0.2);
+    transition: all 0.4s ease;
+    min-height: 420px;
+  }
+
+  .videos #tiktok-video{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 30px;
+  }
+  
+  .videos .frame:hover {
+    transform: translateY(-10px) scale(1.03);
+    border-color: #f85454;
+    box-shadow: 0 0 35px rgba(248, 84, 84, 0.4);
+  }
+  
+  .videos iframe {
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
+    border: none;
+  }
+  .videos .tiktok-embed iframe{
+    height: 900px;
+  }
+  /* Titlu opțional dacă vrei să adaugi texte */
+  .videos h2 {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 992px) {
+    .videos {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .videos .frame {
+      flex: 1 1 100%;
+      max-width: 90%;
+    }
+  }
+  
+
+
+  .mobile-aboutus{
+    display: none;
+  }
+
+  .mobile-aboutus div.content .title{
+    width: 100%;
+    margin: 20px 0;
+    color: #fff;
+    text-align: center;
+    font-family: "Arial Rounded MT";
+  }
+  .mobile-aboutus p.content {
+    color: #fff;
+    text-align: center;
+    font-family: "Arial Rounded MT";
+    font-size: 1.1rem;
+    line-height: 40px;
+  }
+  .mobile-aboutus .socials{
+    margin-top: 20px;
+  }
+  .mobile-aboutus .socials ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .mobile-aboutus .socials ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin: 10px 0;
+  }
+  .mobile-aboutus .socials ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 10px;
+    font-weight: 700;
+  }
+  .mobile-aboutus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a;
+    padding: 10px 30px;
+  }
+
+  
+  .mobile-aboutus .socials ul li img{
+    height: 40px;
+    width: 40px;
+  }
+
+  #about div.content p.desc-maria{
+    display: none;
+  }
+
+/* DESIGN RESPONSIVE */
+
+/* desktop */
+@media (min-width: 992px) and (max-width: 1620px){
+    #banner img{
+        height: 100%;
+        margin: auto;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+  }
+
+  @media (min-width: 1700px) {
+    #banner img{
+        height: 100%;
+        margin: auto;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+  }
+
+/* tableta */
+@media (min-width:760px) and (max-width: 992px) {
+    #banner img{
+        height: 100%;
+        margin: auto;
+        position: relative;
+        transform: translateX(0px);
+        width: 100%;
+    }
+  }
+
+  /* telefoane */
+
+  @media (max-width: 790px) {
+    #banner img{
+        height: 80%;
+        margin: auto;
+        position: relative;
+        transform: translateX(0px);
+        width: 100%;
+    }
+  }
+
+
+  @media (max-width: 576px) {
+    #banner img{
+        height: 60%;
+        margin: auto;
+        position: relative;
+        transform: translateX(0px);
+        width: 100%;
+    }
+
+    #banner .content{
+        height: 50%;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+    #banner .content p.subtitle{
+        bottom: 10%;
+    }
+
+    #about{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        height: auto;
+    }
+
+    #about div.content#first, #about div.content#second, #about div.content#third{
+        position: relative;
+        width: 100vh;
+        width: 100%;
+    }
+
+
+    #about div.content .title, #about div.content .inner-content .left{
+      display: none;
+    }
+
+    #about div.content#first .inner-content{
+      padding: 30px;
+      padding-top: 30px;
+      padding-bottom: 0;
+      flex-direction: column;
+    }
+
+
+    #about div.content#second .inner-content, #about div.content#third .inner-content{
+     width: 100%;
+     flex-direction: column;
+    }
+
+    #about div.content#third .inner-content{
+      padding:  0;
+    }
+
+    #about div.content#second .inner-content p.content, #about div.content#third .inner-content p.content{
+      width: 100%;
+      font-size: 1.3rem;
+      text-align: center;
+      line-height: normal;
+    }
+
+    #about div.content#second p.name, #about div.content#third p.name{
+      position: relative;
+      margin: 10px 0;
+      margin-top: 20px;
+      right: 0;
+    }
+
+    #about div.content#first .inner-content img.girl{
+      height: 20rem;
+      left: 0%;
+      transform: translateX(-100%);
+      margin-top: 20px;
+    }
+
+    #about div.content#third .inner-content img.girl{
+      height: 200px;
+      right: 50%;
+      transform: translateX(50%);
+      margin-top: 20px;
+    }
+
+    #about div.content p.desc-maria{
+      display: block;
+      color: #fff;
+      font-size: 1.3rem;
+      text-align: center;
+      font-family: "Arial Rounded MT";
+
+
+    }
+    #about div.content p.desc-maria span{
+      display: inline-block;
+      width: 100%;
+      font-family: "CrackedNarrow";
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    #about div.content#second .inner-content img.girl{
+      position: relative;
+      right: 0%;
+      transform: translateX(-50%);
+      margin-top: 20px;
+
+    }
+    #troublemedia img{
+      margin-bottom: 30px;
+    }
+    #troublemedia .inner {
+      width: 100%;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    #troublemedia .header {
+      padding: 0;
+      font-size: 2.5rem;
+      margin: 0;
+      margin-left: 15px;
+
+    }
+    
+    #troublemedia .header h1{
+      text-align: center;
+      display: block;
+    }
+  
+    #troublemedia .header p {
+      font-size: 1.5rem;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    #troublemedia .content p.content{
+      font-size: 1rem;
+      padding: 0;
+      margin: 10px 0;
+      margin-left: 15px;
+      text-align: center;
+    }
+    #troublemedia .cta{
+      margin: 0;
+    }
+
+    .videos {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .videos iframe{
+      height: 300px;
+      width: 300px;
+      align-self: stretch;
+    }
+
+  }

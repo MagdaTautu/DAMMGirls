@@ -9,23 +9,46 @@
 </head>
 <body>
     <section id="banner">
-       <img src="./resources/glitch_effect.gif" alt="">
-       <div class="content">
-        <h1>Trouble Media</h1>
-        <img src="./resources/icons8-x-24.png" alt="">
-        <p class="subtitle">DAMM Girls</p>
-       </div>
-    </section>
+        <img src="./resources/glitch_effect.gif" alt="" class="logo">
+        <div class="content">
+          <h1>Trouble Media <span>x</span></h1>
+          <!-- <img src="./resources/icons8-x-24.png" alt="X icon" class="x-icon"> -->
+          <p class="subtitle">DAMM Girls</p>
+        </div>
+      </section>
+    <div class="mobile-aboutus">
+        <div class="content">
+            <div class="title">
+                <h1>About Us</h1>
+            </div>
+            <div class="inner-content">
+                <p class="content">
+                    DAMM Girls este o trupă de dans formată din Ana, Maria și Gabi, parte din Trouble Academy. 
+                    În fiecare zi aducem energie și vibe pozitiv prin mini-coregrafii pe piesele voastre preferate sau 
+                    pe melodiile care ne inspiră.
+                </p>
+                  <div class="socials">
+                    <ul>
+                        <li class="social-link"><img src="./resources/icons8-youtube-48.png" alt=""><a href="https://www.youtube.com/@DAMM_Girls">youtube.com/@DAMM_Girls</a></li>
+                        <li class="social-link"><img src="./resources/icons8-tiktok-48.png" alt=""><a href="tiktok.com/@damm.girls13">tiktok.com/@damm.girls13</a></li>
+                        <li class="social-link"><img src="./resources/icons8-insta-48.png" alt=""><a href="https://www.instagram.com/officialdammgirls/">officialdammgirls</a></li>
+                        <li class="social-link"><img src="./resources/facebook.png" alt=""><a href="https://www.facebook.com/profile.php?id=61572222701343">DAMM Girls</a></li>
+                    
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     <section id="about">
+       
         <div class="content" id="first">
             <div class="title">
                 <h1>About Us</h1>
                 <p class="name">MARIA</p>
+               
             </div>
             <div class="inner-content">
                 <div class="left">
-                    
-                    
                     <p class="content">
                         DAMM Girls este o trupă de dans formată din Ana, Maria și Gabi, parte din Trouble Academy. 
                         În fiecare zi aducem energie și vibe pozitiv prin mini-coregrafii pe piesele voastre preferate sau 
@@ -37,15 +60,22 @@
                             <li class="social-link"><img src="./resources/icons8-youtube-48.png" alt=""><a href="https://www.youtube.com/@DAMM_Girls">youtube.com/@DAMM_Girls</a></li>
                             <li class="social-link"><img src="./resources/icons8-tiktok-48.png" alt=""><a href="tiktok.com/@damm.girls13">tiktok.com/@damm.girls13</a></li>
                             <li class="social-link"><img src="./resources/icons8-insta-48.png" alt=""><a href="https://www.instagram.com/officialdammgirls/">officialdammgirls</a></li>
+                            <li class="social-link"><img src="./resources/facebook.png" alt=""><a href="https://www.facebook.com/profile.php?id=61572222701343">DAMM Girls</a></li>
+                        
                         </ul>
                     </div>
                 </div>
+                <p class="desc-maria">
+                    <span>MARIA</span>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, mollitia autem tenetur commodi qui repellat reiciendis maiores quo sit nemo?
+                </p>
                 <img class="girl" id="girl1" src="./resources/maria1.png" alt="">
             </div>
         </div>
         <div class="content" id="second">
             <div class="inner-content">
                 <p class="name">ANNE</p>
+                <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum tempore voluptate quod asperiores dolor iusto ratione quibusdam repellat magnam! Excepturi?</p>
                 <img class="girl" id="girl2" src="./resources/anne1.png" alt="">
             </div>
 
@@ -53,7 +83,7 @@
         <div class="content" id="third">
             <div class="inner-content">
                 <p class="name">GABI</p>
-
+                <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt assumenda sed voluptas tempore. Reiciendis facere sunt quasi omnis repudiandae, mollitia rerum explicabo ipsam tempore ab at voluptates quisquam consequuntur officiis!</p>
                 <img class="girl" id="girl3" src="./resources/gabi1.png" alt="">
             </div>
 
@@ -82,12 +112,35 @@
             
         </div>
     </section>
+    <section class="videos">
+        <div id="tiktok" class="frame">
+            <!-- <h2>Ultimul video TikTok</h2> -->
+            <div id="tiktok-video"></div>
+        </div>
+        <div id="youtube" class="frame">
+            <!-- <h2>Ultimul video Youtube</h2> -->
+            <div id="youtube-video"></div>
+        </div>
+    </section>
+   
 
-    <section id="tiktok">
-        <h2>Ultimul video TikTok</h2>
-        <div id="tiktok-video"></div>
+      <section id="followers">
+        <h1>Social Media Followers</h1>
+        <div class="followers-grid">
+          <div class="card">
+            <img src="./resources/icons8-tiktok-48.png" alt="TikTok">
+            <p id="tiktok-count">Loading...</p>
+          </div>
+          <div class="card">
+            <img src="./resources/icons8-youtube-48.png" alt="YouTube">
+            <p id="youtube-count">Loading...</p>
+          </div>
+          <div class="card">
+            <img src="./resources/facebook.png" alt="Facebook">
+            <p id="facebook-count">Loading...</p>
+          </div>
+        </div>
       </section>
-
 
     <script>
         const first = document.querySelector("#girl1");
@@ -110,7 +163,7 @@
         });
         third.addEventListener("mouseenter", () => {
             first_div.style.width = "50%";
-            second_div.style.width = "70%";
+            second_div.style.width = "63%";
         });
 
         third.addEventListener("mouseleave", () => {
@@ -118,6 +171,9 @@
             second_div.style.width = "";
         });
     </script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
