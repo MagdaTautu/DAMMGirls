@@ -1,60 +1,4 @@
-// async function loadTikTok() {
-//   try {
-//     const res = await fetch("http://localhost:3000/api/tiktok/latest");
-//     const data = await res.json();
 
-//     if (data.embedHtml) {
-//       document.getElementById("tiktok-video").innerHTML = data.embedHtml;
-//       const script = document.createElement("script");
-//       script.src = "https://www.tiktok.com/embed.js";
-//       document.body.appendChild(script);
-//     } else {
-//       document.getElementById("tiktok-video").innerText = "Nu am găsit videoclip.";
-//     }
-//   } catch (err) {
-//     console.error("Eroare:", err);
-//   }
-// }
-
-// loadTikTok();
-
-
-// async function loadYouTube() {
-//   try {
-//     const res = await fetch("http://localhost:3000/api/youtube/latest");
-//     const data = await res.json();
-
-//     if (data.embedHtml) {
-//       document.getElementById("youtube-video").innerHTML = data.embedHtml;
-//     } else {
-//       document.getElementById("youtube-video").innerText = "Nu am găsit videoclip YouTube.";
-//     }
-//   } catch (err) {
-//     console.error("Eroare YouTube:", err);
-//   }
-// }
-
-// loadYouTube();
-
-// async function updateFollowers() {
-//   const endpoints = [
-//     { id: "tiktok-count", url: "/api/followers/tiktok" },
-//     { id: "youtube-count", url: "/api/followers/youtube" },
-//   ];
-
-//   for (const { id, url } of endpoints) {
-//     try {
-//       const res = await fetch(url);
-//       const data = await res.json();
-//       document.getElementById(id).innerText = data.followers.toLocaleString("ro-RO");
-//     } catch (err) {
-//       document.getElementById(id).innerText = "Eroare 😞";
-//       console.error(`Eroare la ${url}:`, err);
-//     }
-//   }
-// }
-
-// updateFollowers();
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -65,7 +9,7 @@ window.addEventListener("load", () => {
   /* ─────────────── 🔹 VIDEO HANDLERS ─────────────── */
   async function loadTikTok() {
     try {
-      const res = await fetch("http://localhost:3000/api/tiktok/latest");
+      const res = await fetch("https://dammgirls.onrender.com/:3000/api/tiktok/latest");
       const data = await res.json();
 
       if (data.embedHtml) {
@@ -81,7 +25,7 @@ window.addEventListener("load", () => {
 
   async function loadYouTube() {
     try {
-      const res = await fetch("http://localhost:3000/api/youtube/latest");
+      const res = await fetch("https://dammgirls.onrender.com/:3000/api/youtube/latest");
       const data = await res.json();
 
       if (data.embedHtml)

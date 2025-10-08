@@ -224,7 +224,7 @@ app.get("/api/youtube/latest", async (req, res) => {
 
 /* ────────────────────────────── */
 app.listen(PORT, () => {
-  console.log(`✅ Server running at http://localhost:${PORT}`);
+  console.log(`✅ Server running at https://dammgirls.onrender.com/:${PORT}`);
 });
 
 async function getTikTokFollowers(username) {
